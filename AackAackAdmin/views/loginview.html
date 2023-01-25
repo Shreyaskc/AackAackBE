@@ -1,0 +1,16 @@
+  <div class="login" ng-init="user.message=''">
+	<img style="width:100px; height:100px; margin-left:100px;;" src="images/logo.png"</img>
+        
+        <form ng-submit="Login()">
+    	<input type="text" name="username" placeholder="Username" ng-model="user.username"/>
+        <input type="password" name="password" placeholder="Password" ng-model="user.password"/>
+           
+        <button type="submit" class="btn btn-primary btn-block btn-large" >Login</button>
+            
+            
+            
+            <div><p style="color:red;text-align:center">{{user.message}}</p></div>  
+      </form>
+</div>  
+
+

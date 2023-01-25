@@ -1,0 +1,99 @@
+
+
+
+<!--
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#gallery">AackAack</a>
+        <a class="navbar-brand" href="#gallery"><img src='{{profilepic}}' height=35 ></a>
+        <a class="navbar-brand" href="#gallery">Hi,{{myname}}</a>
+        
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+        <div class="col-sm-3 col-md-3 pull-right">
+        <a class="navbar-brand" href="#logout">logout</a>
+        </div>        
+    </div>
+</nav>  -->
+
+<nav role="navigation" class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#gallery" class="navbar-brand">AackAack</a>
+        </div>
+        <!-- Collection of nav links and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#gallery"><img src='{{profilepic}}' height=35 /></a></li>
+                <li><a href="#gallery">Hi,{{myname}}</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="text-center">
+            <h1 style="color:white">Send an Aack</h1>
+        </div>
+        <hr style="color:white"/>
+		<div class="row">
+            <div class="col-md-4">
+                <div class="well">
+                    <img class="thumbnail img-responsive" alt="Loading Image.." style="width:100%"
+                        src="{{img.image}}" />
+						
+                </div>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+            <table>
+                 <tr>
+                     <td><p style="color:white">Caption:</p></td>
+                     <td><p style="color:white">{{img.caption}}</p></td>
+                 </tr>
+                     
+                 <tr>
+                     <td><p style="color:white">Conversation With:    &nbsp &nbsp</td>
+                     <td><p style="color:white">{{img.con_with}}</p></td>
+                 </tr>
+                
+                 <tr>
+                     <td><p style="color:white">Date:</td>
+                     <td><p style="color:white">{{img.date}}</p></td>
+                 </tr>
+                
+                 <tr>
+                     <td><p style="color:white">Email To:</p></td>
+                     <td><input type="text" name="email" placeholder="Enter Email" ng-model="user.email"/></td>
+                 </tr>
+                 <tr>
+                     
+                     <td><button type="submit" class="btn btn-primary btn-block btn-large" ng-click="sendmail()" >Send</button></td>
+                     <td><button type="submit" class="btn btn-primary btn-block btn-large" ng-click="back()" >back</button></td>
+                 </tr>
+                 <tr>
+                     <td><p style="color:red">{{validate}} </p></td>
+                    
+                 </tr>
+                </table>
+		</div>
+
+    </div>
+</div>

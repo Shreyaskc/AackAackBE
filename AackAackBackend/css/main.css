@@ -1,0 +1,66 @@
+*{ margin:0px; padding:0px; outline:none; list-style:none;}
+html , body { overflow:hidden; color:#bbbbbb; height:100%; min-height:100%;}
+body{ margin:0px; padding:0px;background:#CFCDDB;overflow:scroll;font-family: "Lucida Grande", Verdana, sans-serif;font-size: 12px;color: #555555;-webkit-text-size-adjust: none;}
+a {color:#fff;text-decoration:none;}
+#wrapper{width: 80%;min-width: 800px;margin: 0 auto;}
+#reg1,#reg2{padding:0px 5px 0px 8px;background:#fff;}
+#gn_log1{padding:0px 5px 0px 8px;background:#fff;}
+#gn_log2{padding:0px 5px 5px 8px;background:#fff;}
+#fb_reg1,#fb_reg2{padding:0px 8px;background:#fff;}
+#twt_reg1,#twt_reg2{padding:0px 8px;background:#fff;}
+#wog1,#wog2,#wog3,#wog4{padding:0px 5px 0px 8px;background:#fff;}
+#reg1,#wog1,#gn_log1,#fb_reg1,#twt_reg1{border-top-left-radius: 5px;border-top-right-radius: 5px;}
+#reg2,#wog4,#gn_log2,#fb_reg2,#twt_reg2{border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;}
+#getwog1,#updatewog1,#deletewog1,#frgtpwd1,#getuser1,#updateuser1{border-radius:5px;padding:0px 5px 0px 8px;background:#fff;}
+#data{border: 0;padding: 3px 2px;color: #fff;text-shadow: 1px 1px 0 #0A5482;cursor: pointer;margin: 10px;vertical-align: middle;background: black;border-radius: 5px;}
+#facebook_login,#twitter_login{display:none;}
+#facebook,#twitter{cursor:pointer;}
+#register, #login, #facebook_register,#twitter_register,#wog_add,#wog_get,#wog_update,#wog_delete
+,#forgot_pwd,#get_user,#update_user{border: 0;padding: 3px 10px;color: #fff;text-shadow: 1px 1px 0 #0A5482;cursor: pointer;vertical-align: middle;background: #65AB1A;border-radius: 5px;}
+#signup,#log,#facebook_login,#twitter_login,#wog,#getwog,#updatewog,#deletewog,#frgtpwd,#getuser,#updateuser{margin-top:1%;}
+#error{color:#ff0000;font-weight:bold;}
+#overlay{display:none;}
+#btm_bar{ float:left; width:100%;margin:400px 0 -18px 0; position:relative;z-index:900;}
+#btm_bar .inner{width:500px;height:auto; margin:auto;}
+#box1{margin-top:20px;}
+#update_wog{background:#fff;width:35%;border-bottom-left-radius:8px;border-bottom-right-radius:8px;}
+#Send2{border: 0;padding: 4px 10px;color: white;text-shadow: 1px 1px 0 #0A5482;cursor: pointer;vertical-align: middle;background: #65AB1A;border-radius: 5px;margin:0px 0px 10px 50px;}
+#wogtitle{padding: 5px 20px 10px;}
+#wog_head{font-size:20px;font-weight:bold;color:#fff;border: 0;text-shadow: 1px 1px 0 #0A5482;cursor: pointer;
+vertical-align: middle;background: #65AB1A;width:35%;text-align:center;padding:0.5% 0%;border-top-left-radius:8px;border-top-right-radius:8px;}
+#wog_climate td,#wog_notes td{padding:15px 10px;font-weight:bold;}
+#update1{background:#fff;border: 1px solid #ccc;margin-bottom: 5%;width:60%;border-bottom-left-radius:8px;border-bottom-right-radius:8px;}
+#profile{font-size:20px;font-weight:bold;color:#fff;text-shadow: 1px 1px 0 #0A5482;cursor: pointer;
+vertical-align: middle;background: #65AB1A;width:60%;text-align:center;padding:0.5% 0%;border-top-left-radius:8px;border-top-right-radius:8px;}
+#content1{padding: 20px 10px 10px 15px;font-weight:bold;}
+#content2{padding: 20px 0px 10px 0px;}
+#Send1{border: 0;padding: 5px 10px;color: white;text-shadow: 1px 1px 0 #0A5482;cursor: pointer;margin:5px 0px 15px 10px;vertical-align: middle;background: #65AB1A;border-radius: 5px;}
+.btmToggle ul{float:left; list-style:none;position:relative; top:-28px; margin:-11px 0 0 10px;}
+.btmToggle ul li{float:left; list-style:none; background:#65AB1A; width:131px; height:28px; margin:0 10px 0 0; padding:10px 0 0 0;font-family: Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#fff; text-decoration:none; text-transform:none; text-align:center;}
+
+.btmToggle ul li span{float:left;width:131px; height:28px; display:block;font-family: Arial, Helvetica, sans-serif;cursor:pointer; font-size:12px; font-weight:bold; color:#fff; text-decoration:none; text-transform:none; text-align:center;}
+
+.btmToggle{position:relative; bottom:-11px;width:808px;/*height:375px;*/height:auto; margin:0; padding-left: 227px;}
+
+.btmToggleAreaReq{position:relative; bottom:0;width:808px;height:375px; margin:18px 0 0 -10px; display:none; z-index:100; }
+.btmToggleAreaReq .top{width:808px;height:15px; margin:0;}
+.btmToggleAreaReq .body{width:auto;height:350px; padding:5px; margin:0; background:#65AB1A;}
+.btmToggleAreaReq .body .texArea{font-family: Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#000; text-decoration:none; text-transform:none; text-align:left;width:auto;height:300px;margin:0; background:#fff; padding:20px;}
+.btmToggleAreaReq .body .texArea #txtRequest{height:300px;width:755px;}
+
+
+.btmToggleAreaRes {position:relative; bottom:0;width:808px;height:375px; margin:18px 0 0 -10px; display:none; z-index:100; }
+.btmToggleAreaRes .top{width:808px;height:17px; margin:0;}
+.btmToggleAreaRes .body{width:auto;height:350px; padding:5px; margin:0; background:#65AB1A;}
+.btmToggleAreaRes .body .texArea{font-family: Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#000; text-decoration:none; text-transform:none; text-align:left;width:auto;height:300px;margin:0; background:#fff; padding:20px;}
+.btmToggleAreaRes .body .texArea #txtResponse{height:300px;width:755px;}
+
+
+.btmToggleAreaErr{position:relative; bottom:0;width:808px;height:375px; margin:18px 0 0 -10px; display:none; z-index:100; }
+.btmToggleAreaErr .top{width:auto;height:15px; margin:0;}
+.btmToggleAreaErr .body{width:auto;height:350px; padding:5px; margin:0; background:#65AB1A;}
+.btmToggleAreaErr .body .texArea{font-family: Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#000; text-decoration:none; text-transform:none; text-align:left;width:auto;height:300px;margin:0; background:#fff; padding:20px;}
+.btmToggleAreaErr .body .texArea #txtError{height:300px;width:755px;}
+
+.grnBtnAreaClear{float:right; bottom:0;margin-top:5px;osition:relative; width:auto;  bottom:-50px;}
+.grnBtnAreaClear .grnBtn{float:left; position:relative; width:auto; border-radius:5px;background:#65AB1A; padding:6px 8px;font-family: Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#fff; text-decoration:none; text-transform:none;}
